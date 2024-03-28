@@ -233,7 +233,7 @@ span{
     flex-direction: column;
     text-align: center;
     padding: 0 4rem;
-    transform: translateY(100%);
+    transform: translateY(100%);;
     transition: .3s ease;
 }
 .portfolio-box:hover .portfolio-layer{
@@ -304,7 +304,7 @@ span{
 .footer-text{
     font-size: 1.6rem;
 }
-.footer-iconTop{
+.footer-iconTop a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -348,6 +348,20 @@ span{
 }
 @media (max-width: 768px){
     #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+    .navbar.active{
         display: block;
     }
     .home{
